@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Inside a Box</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+	
+		/* Style for the large box */
+			.big-box {
+				width: 400px;
+				height: 400px;
+				background-color: black;
+				position: relative;
+			}
+
+			/* Style started for five boxes */
+
+			.small-box-five {
+				width: 125px;
+				height: 125px;
+				background-color: #fc466b;
+				position: absolute;
+			}
+
+			.box1-five {
+				top: 10px;
+				left: 10px;
+			}
+
+			.box2-five {
+				top: 10px;
+				right: 10px;
+			}
+
+			.box3-five {
+				bottom: 10px;
+				left: 10px;
+			}
+
+			.box4-five {
+				bottom: 10px;
+				right: 10px;
+			}
+
+			.box5-five {
+				top:138px ;
+				left: 138px;
+			}
+			/* Style ended for five boxes */
+
+
+			/* Style started for four boxes */
+			.small-box-four {
+				width: 180px;
+				height: 180px;
+				background-color: #fc466b;
+				position: absolute;
+			}
+
+			.box1-four {
+				top: 10px;
+				left: 10px;
+			}
+
+			.box2-four {
+				top: 10px;
+				right: 10px;
+			}
+
+			.box3-four {
+				bottom: 10px;
+				left: 10px;
+			}
+
+			.box4-four {
+				bottom: 10px;
+				right: 10px;
+			}
+			/* Style ended for four boxes */
+
+
+			/* Style started for three boxes */
+			.small-box-three {
+				width: 110px;
+				height: 380px;
+				background-color: #fc466b;
+				position: absolute;
+			}
+
+			.box1-three {
+				top: 10px;
+				bottom: 10px;
+				left: 10px;
+			}
+
+			.box2-three {
+				top: 10px;
+				right: 10px;
+			}
+
+			.box3-three {
+				top: 10px;
+				left: 145px;
+			}
+			/* Style ended for three boxes */
+
+
+			/* Style started for two boxes */
+			.small-box-two {
+				width: 185px;
+				height: 380px;
+				background-color: #fc466b;
+				position: absolute;
+			}
+
+			.box1-two {
+				top: 10px;
+				left: 10px;
+			}
+
+			.box2-two {
+				top: 10px;
+				right: 10px;
+			}
+			/* Style ended for two boxes */
+
+
+			/* Style started for one box */
+			.small-box-one {
+				width: 380px;
+				height: 380px;
+				background-color: #fc466b;
+				position: absolute;
+			}
+
+			.box1-one {
+				top: 10px;
+				bottom: 10px;
+				left: 10px;
+			}
+			/* Style ended for one box */
+    </style>
+</head>
+<body>
+<br><br>
+	<div class="container text-center">
+	  <div class="row">
+		<div class="col-6 col-sm-6">
+			<div class="big-box">
+				<div class="small-box-one box1-one"></div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-6"  style="text-align: left;">
+			<code>
+				/* Style for the large box */<br>
+				.big-box <br>{
+					width: 400px;
+					height: 400px;
+					background-color: black;
+					position: relative;
+				}<br><br>
+				
+				/* Style for the small boxes */<br>
+				.small-box-one <br>{
+					width: 380px;
+					height: 380px;
+					background-color: #fc466b;
+					position: absolute;
+				}<br><br>
+
+				/* Position each small box */<br>
+				.box1 {
+					top: 10px;
+					left: 10px;
+				}
+			</code>
+		</div>
+	  </div>
+	</div>
+	<br>
+	
+	<div class="container text-center">
+	  <div class="row">
+		<div class="col-6 col-sm-6">
+			<div class="big-box">
+				<div class="small-box-two box1-two"></div>
+				<div class="small-box-two box2-two"></div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-6"  style="text-align: left;">
+			<code>
+				/* Style for the large box */<br>
+				.big-box <br>{
+					width: 400px;
+					height: 400px;
+					background-color: black;
+					position: relative;
+				}<br><br>
+				/* Style for the small boxes */<br>
+				.small-box-two <br>
+				{
+					width: 185px;
+					height: 380px;
+					background-color: #fc466b;
+					position: absolute;
+				}<br><br>
+
+				/* Position each small box */<br>
+				.box1-two 
+				{
+					top: 10px;
+					left: 10px;
+				}<br>
+
+				.box2-two {
+					top: 10px;
+					right: 10px;
+				}
+			</code>
+		</div>
+	  </div>
+	</div>
+	<br>
+	
+	<div class="container text-center">
+	  <div class="row">
+		<div class="col-6 col-sm-6">
+			<div class="big-box">
+				<div class="small-box-three box1-three"></div>
+				<div class="small-box-three box2-three"></div>
+				<div class="small-box-three box3-three"></div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-6"  style="text-align: left;">
+			<code>
+				/* Style for the large box */<br>
+				.big-box <br>{
+					width: 400px;
+					height: 400px;
+					background-color: black;
+					position: relative;
+				}<br><br>
+				/* Style for the small boxes */<br>
+				.small-box-three <br>{
+					width: 110px;
+					height: 380px;
+					background-color: #fc466b;
+					position: absolute;
+				}<br><br>
+
+				/* Position each small box */<br>
+				.box1-three {
+					top: 10px;
+					left: 10px;
+				}<br>
+
+				.box2-three {
+					top: 10px;
+					right: 10px;
+				}<br>
+
+				.box3-three {
+					top: 10px;
+					left: 145px;
+				}<br>
+			</code>
+		</div>
+	  </div>
+	</div>
+	<br>
+	
+	<div class="container text-center">
+	  <div class="row">
+		<div class="col-6 col-sm-6">
+			<div class="big-box">
+				<div class="small-box-four box1-four"></div>
+				<div class="small-box-four box2-four"></div>
+				<div class="small-box-four box3-four"></div>
+				<div class="small-box-four box4-four"></div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-6"  style="text-align: left;">
+			<code>
+				/* Style for the large box */<br>
+				.big-box <br>{
+					width: 400px;
+					height: 400px;
+					background-color: black;
+					position: relative;
+				}<br><br>
+				/* Style for the small boxes */<br>
+				.small-box-four <br>{
+					width: 180px;
+					height: 180px;
+					background-color: #fc466b;
+					position: absolute;
+				}<br><br>
+				
+				/* Position each small box */<br>
+				.box1-four {
+					top: 10px;
+					left: 10px;
+				}<br>
+
+				.box2-four {
+					top: 10px;
+					right: 10px;
+				}<br>
+
+				.box3-four {
+					bottom: 10px;
+					left: 10px;
+				}<br>
+
+				.box4-four {
+					bottom: 10px;
+					right: 10px;
+				}<br>
+				
+			</code>
+		</div>
+	  </div>
+	</div>
+	<br>
+	
+	<div class="container text-center">
+	  <div class="row">
+		<div class="col-6 col-sm-6">
+			<div class="big-box">
+				<div class="small-box-five box1-five"></div>
+				<div class="small-box-five box2-five"></div>
+				<div class="small-box-five box3-five"></div>
+				<div class="small-box-five box4-five"></div>
+				<div class="small-box-five box5-five"></div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-6"  style="text-align: left;">
+			<code>
+				/* Style for the large box */<br>
+				.big-box <br>{
+					width: 400px;
+					height: 400px;
+					background-color: black;
+					position: relative;
+				}<br><br>
+				/* Style for the small boxes */<br>
+				.small-box-five <br>{
+					width: 125px;
+					height: 125px;
+					background-color: #fc466b;
+					position: absolute;
+				}<br><br>
+
+				/* Position each small box */<br>
+				.box1-five {
+					top: 10px;
+					left: 10px;
+				}<br>
+
+				.box2-five {
+					top: 10px;
+					right: 10px;
+				}<br>
+
+				.box3-five {
+					bottom: 10px;
+					left: 10px;
+				}<br>
+
+				.box4-five {
+					bottom: 10px;
+					right: 10px;
+				}<br>
+
+				.box5-five {
+					top:138px ;
+					left: 138px;
+				}<br>
+			</code>
+		</div>
+	  </div>
+	</div>
+	<br><br>
+</body>
+</html>
